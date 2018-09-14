@@ -2,14 +2,14 @@
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <body>
-<div ng-app="myApp" ng-init="firstName='Ajay';lastName ='Singh'">
-  <p>Name: <input type="text" ng-model="name"></p>
-  <p ng-bind="name"></p>
-  <p ng-bind="firstName"></p>
-  <p>{{5+6}}</p>
-  <p>{{lastName}}</p>
-  <p>Total : {{value1 + value2}}</p>
-  ajay
+<div ng-app="" ng-init="firstName='Ajay';lastName ='Singh'">
+  <p>Bonus: <input type="text" ng-model="bonus"></p>
+  
+  Full Name : <label ng-bind="firstName"></label> {{lastName}} || Bonus : <label ng-bind="bonus"></label>
+
+  <p>Basic Salary : {{10000+500}}</p> 
+
+ 
  
 </div>
 </body>
