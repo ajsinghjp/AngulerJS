@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<body>
+  <div id="App1" ng-app="myApp">
+    <p ng-controller="myCtrl">Total : {{value1 + value2}}</p>
+    <p ng-controller="myCtrl1">Total : {{value3 + value4}}</p>
+  </div>
+
+  <script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function ($scope) {
+      $scope.value1 = 11;
+      $scope.value2 = 22;
+
+    });
+
+    app.controller('myCtrl1', function ($scope) {
+      $scope.value3 = 25;
+      $scope.value4 = 75;
+
+    });
+  </script>
+</body>
+
+</html>

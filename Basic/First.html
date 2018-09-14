@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+  <div ng-app="" ng-init="firstName='Ajay';lastName ='Singh'">
+    <p>Bonus: <input type="text" ng-model="bonus"></p>
+
+    Full Name : <label ng-bind="firstName"></label> {{lastName}} || Bonus : <label ng-bind="bonus"></label>
+
+    <p>Basic Salary : {{10000+500}}</p>
+
+
+
+  </div>
+</body>
+
+</html>

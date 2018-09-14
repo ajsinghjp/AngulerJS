@@ -4,14 +4,15 @@
 <body>
 
 <div ng-app="myApp" ng-init="a =5; b= 12">
-  <input style="background-color:{{color}}" ng-controller="myCtrl"></input>
-  <input style="background-color:{{myColor}}" ng-Model="myColor"></input>
-  <p>{{a*b}} </p>
+  <input style="background-color:{{color}}" ng-controller="myCtrl"></input><br/><br/>
+  <input style="background-color:{{myColor}}" ng-Model="myColor"></input><br/><br/>
+  <label ng-bind="TodayDate"ng-controller="myCtrl"></label>
 </div>
 <script>
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
     $scope.color = "Red";    
+ $scope.TodayDate = new Date();
 				          }); 
 </script>
 </body>
