@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-init="a =5; b= 12">
+  <input style="background-color:{{color}}" ng-controller="myCtrl"></input>
+  <input style="background-color:{{myColor}}" ng-Model="myColor"></input>
+  <p>{{a*b}} </p>
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.color = "Red";    
+				          }); 
+</script>
+</body>
+</html>

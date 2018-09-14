@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+
+<body>
+
+<div ng-app="myApp" ng-init="Address = 'Jaipur'; color='red'" ng-controller="myCtrl">
+  <p>Full Name : <input type="text" ng-model="name" style="background-color:{{color}}"></p>
+  <p>Age Number : <input type="text" ng-model="age"></p>
+  <p ng-bind="Address" ></p>
+  <h1>Hello {{name}} your age is {{age}}</h1>
+  <p ng-bind="age" style="background-color:orangered"></p>
+</div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.name = 'Ajay';
+            $scope.age = '25'
+        });
+
+    </script>
+
+</body>
+</html>

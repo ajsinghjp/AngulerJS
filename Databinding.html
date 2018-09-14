@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+<div ng-app="" ng-init="a= 5; b = 10; names=['Anjila joli', 'Bret pit', 'Vin disal', 'Tom cruze']; Games = [{Name : 'Sachine', Country : 'India'}, {Name : 'Riki Pontig', Country : 'Australia'}, {Name : 'Shoyb Akhater', Country : 'Pakistan'}]">
+  <input type="text" ng-model="a"><br/>
+  <input type="text" ng-model="b"><br/>
+  <p>Total : {{a * b}}</p><br/>
+  <ul>
+	<li ng-repeat="X in names">
+		{{ X }}
+        </li>
+  </ul><br/>
+ <ul>
+	<li ng-repeat="X in Games">
+		{{ X.Name + ' is player of ' +X.Country }}
+        </li>
+  </ul> 
+</body>
+</html>

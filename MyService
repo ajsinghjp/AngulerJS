@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl"> 
+
+<p>The time is:</p>
+
+<h1>{{text}}</h1>
+</div>
+
+<p>The $interval service runs a function every specified millisecond.</p>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $myService)
+						{
+						    $scope.text = $myService.myFunction(255);
+						}
+		      );
+app.service("myService", function(){
+                   this.myFunction = function(x){
+				                      return x.toString(16);
+									   }				   
+
+});			  
+			  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+<div ng-app="Object" ng-init="Person={FirstName:'Ajay',LastName:'Singh'}; Point=[55,85,22,37]">
+  
+<p>{{Person.FirstName}}</p>
+<p ng-controller ="ObjController">{{middleName}}</p>
+<p>{{Person.LastName}}</p>
+<p>{{Point[0]}}</p>
+<p ng-controller ="ObjController">{{Array[0]}}</p>
+
+</div>
+<script>
+var app = angular.module("Object", []);
+app.controller("ObjController", function($scope){
+$scope.middleName = 'Kumar';
+$scope.Array = [10000, 58289, 46545, 465465];
+});
+</script>
+</body>
+</html>

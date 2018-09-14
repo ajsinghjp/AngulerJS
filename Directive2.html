@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body ng-app="myApp">
+<w3-test-directive></w3-test-directive>
+<div attribute-directive></div>
+<div class="class-directive"></div>
+<!-- directive : comment-directive -->
+<script>
+var app = angular.module("myApp", []);
+
+app.directive("w3TestDirective", function() {
+    return {
+        template : "<h1>Made by a element directive!</h1>"
+    };
+});
+
+app.directive("attributeDirective", function() {
+    return {
+        template : "<h1>Made by a attribute directive!</h1>"
+    };
+});
+
+app.directive("classDirective", function() {
+    return {restrict : 'C',
+        template : "<h1>Made by a class directive!</h1>"
+    };
+});
+
+app.directive("commentDirective", function() {
+    return {restrict : 'M',
+            replace : true,
+        template : "<h1>Made by a Comment directive!</h1>"
+    };
+});
+
+</script>
+</body>
+
+</html>

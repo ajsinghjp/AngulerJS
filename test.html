@@ -1,0 +1,20 @@
+<html> 
+<head> 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="app.js"></script>
+</head> 
+<body ng-app="myApp"> 
+<div ng-controller="myCtrl"> 
+<button ng-click="toggle()">Toggle</button> 
+<p ng-show="visible" ng-mousemove="cordinate($event)">Hello World!</p> 
+<br/>
+<p>Coordinates: {{x + ', ' + y}}</p>
+<br/>
+<button ng-mousemove="count = count +1">Mouse over me</button> 
+<p>{{count}}</p> 
+<br/>
+<input ng-copy="copy()" ng-blur="blur()" value="Copy this text"></input> 
+
+</div> 
+</body> 
+</html>

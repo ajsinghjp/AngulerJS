@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="personCtrl">
+
+<p>The name is {{ lastName | uppercase }}</p>
+<p>The name is {{ lastName | lowercase }}</p>
+<ul>
+<li ng-repeat="x in names | orderBy : 'country'">
+{{x.name + ', '+x.country}}
+</li>
+</ul>
+<input type="text" ng-Model="test"></input>
+<li ng-repeat="x in names | filter : test">
+{{x.name + ', '+x.country}}
+</li>
+</ul>
+<table>
+<tr >
+<th>Name</th>
+<th ng-click="orderByMe('country')">Country</th>
+</tr>
+<tr ng-repeat="x in names">
+<td>{{x.name}}</td>
+<td>{{x.country | myFilter}}</td>
+</tr>
+</table>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('personCtrl', function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+	$scope.names = [{name:'Ajay', country : 255},{name:'Nitij', country : 256},{name:'Anoop', country :257},{name:'Sandeep', country:'Newzersy'},{name:'Gourave', country : 'China'}];
+	$scope.orderByMe = function(x){
+	               $scope.myOrderBy = x;
+				   }
+});
+
+app.service("myService", function(){
+                   this.myFunction = function(x){
+				                      return x.toString(16);
+									   }				   
+
+});	
+app.filter('myFilter',['myService' ,function(myService)
+									{
+									   return function(x)
+									   {
+										   if(x == 'e')
+										   {
+											 x = 'employee'
+											 
+										   }
+										   return myService.myFunction(x);
+									   };
+									}
+					  ]
+	        );
+
+</script>
+
+</body>
+</html>

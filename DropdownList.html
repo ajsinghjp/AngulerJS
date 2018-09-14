@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<select ng-model="selectedName" ng-options="x for x in names">
+</select>
+<select>
+<option ng-repeat="x in names">{{x}}</option>
+</select>
+
+<br/>
+<select ng-model="selectedCar" ng-options="x.model for x in cars">
+</select>
+<h1>You selected: {{selectedCar.model}}</h1>
+<p>Its color is: {{selectedCar.color}}</p>
+<br/>
+<select ng-model="SelectEmp">
+<option ng-repeat="x in emp" option="x.name">{{x.name}}</option>
+</select>
+<h1>You employee: {{SelectEmp}}</h1>
+<br/>
+<select ng-model="selectedtech" ng-options="x for (x, y) in technologies">
+</select>
+<h1>You select Technologies: {{selectedtech}}</h1>
+<br/>
+<select ng-model="selectedSchool" ng-options="a for (a, b) in school">
+</select>
+
+<h1>You select Class: {{selectedSchool.cla}}</h1>
+<h2>Boy: {{selectedSchool.boy}}</h2>
+<h3>Girl: {{selectedSchool.girl}}</h3>
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) 
+{
+    $scope.names = ["Emil", "Tobias", "Linus"];
+	$scope.cars = [{model : "Ford Mustang", color : "red"}, {model : "Fiat 500", color : "white"}, {model : "Volvo XC90", color : "black"}];
+	
+	$scope.emp = [{name : "ajay", country : "India"}, {name : "Brad", country : "USA"}, {name : "Volvo", country : "Banglades"}];
+		
+	$scope.technologies = {tech1 : "Asp.net", tech2 :"PHP", tect3 : "Java"};
+	
+	$scope.school = {
+	                 school1 : {cla : "A", boy : "20", girl : "30"}, 
+					 school2 : {cla : "B", boy : "40", girl : "50"}, 
+					 school3 : {cla : "C", boy : "60", girl : "70"}
+					};
+});
+</script>
+
+<p>This example shows how to fill a dropdown list using the ng-options directive.</p>
+
+</body>
+</html>
