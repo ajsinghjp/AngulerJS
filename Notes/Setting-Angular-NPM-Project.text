@@ -1,0 +1,11 @@
+our steps must be in this order:
+
+1) Install angular globally : npm install -g angular-cli@latest
+2) Create the app at a directory location : ng new portal  -- routin
+3) Go into that folder : cd portal
+4) Install node modules : npm install
+5) Generate service : ng g service userCD 
+ngular Live Development Server is listening on localhost:4200 : ng serve
+
+https://www.youtube.com/watch?v=sLBGJk3Oq7k
+
