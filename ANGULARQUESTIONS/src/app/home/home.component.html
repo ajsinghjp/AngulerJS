@@ -19,9 +19,13 @@
 </div> -->
 
 
-<div *ngFor="let boat of boats | async">
+<!-- <div *ngFor="let boat of boats | async">
   <h3 [ngClass]="{'green': boat.name === 'Ajay', 'red': boat.name === 'Vijay'}">{{boat.name}}</h3>  
   <img [src]="boat.img" appMagnifier>
   <p>Built in {{boat.year | year}}</p>
   <p>Pipe {{23.33333 | number }}</p>
+</div> -->
+
+<div *ngFor="let boat of boats | async">
+  <app-boat [boat]="boat"></app-boat>
 </div>

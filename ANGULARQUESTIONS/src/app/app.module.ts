@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MagnifierDirective } from './magnifier.directive';
 import { YearPipe } from './year.pipe';
 import { BoatComponent } from './boat/boat.component';
+import { PersonComponent } from './person/person.component';
 
 
 
@@ -16,7 +17,8 @@ import { BoatComponent } from './boat/boat.component';
     HomeComponent,
     MagnifierDirective,
     YearPipe,
-    BoatComponent        
+    BoatComponent,
+    PersonComponent        
   ],
   imports: [
     BrowserModule,
@@ -25,4 +27,8 @@ import { BoatComponent } from './boat/boat.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+
+ }

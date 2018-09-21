@@ -9,4 +9,12 @@ export class AppComponent {
   title = 'ANGULARQUESTIONS';
 
   clicked=true;
+
+  persons:Array<any>;
+  ngOnInit() : void{
+
+  this.persons = [{FirstName : 'John', LastName : 'Doe'},
+                  {FirstName : 'Anna', LastName : 'Gray'}];
+
+ }
 }
