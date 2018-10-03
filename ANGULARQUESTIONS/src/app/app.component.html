@@ -1,0 +1,34 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <app-home></app-home> -->
+
+
+
+<!-- template refrence variable -->
+Message : <input #message (keyup) = '0'><br/>
+<button (click)='output.innerHTML= message.value'>please click </button><br/>
+<div #output></div><br/><br/>
+
+
+
+<!-- template input Varibale -->
+<!-- <div *ngFor="let person of persons">
+        <app-person [firstName]='person.FirstName' [lastName]='person.LastName' [message]='message.value'></app-person><br/><br/>
+</div> -->
+<!-- Desugared Form -->
+<div>
+        <ng-template ngFor [ngForOf]="persons" let-a>
+                <app-person [firstName]="a.FirstName" [lastName]="a.LastName" [message]=message.value></app-person><br/><br/>
+        </ng-template>
+</div>
+
+
+<!-- <div><app-person  *ngIf="true" [firstName]="'Ajay'" [lastName]="'Singh'" [message]=message.value> </app-person></div> -->
+<!-- Desugared Form -->
+<ng-template [ngIf]="true">
+         <app-person  [firstName]="'Ajay'" [lastName]="'Singh'" [message]=message.value> </app-person>
+</ng-template>
+
+
+    
+
+
