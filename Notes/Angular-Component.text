@@ -14,5 +14,19 @@
 
 8. ng new cliApp --style scss --routing [project with Style Scss + routing option]
 
+9 (component minimiging in ng module)generate a compoent for feature module step :-
+   i.  ng g module awesome
+   ii. ng g pipe awesome/lowercase
+   iii. ng g pipe uppercase -m awesome
+10. ng add @angular/pwa (it allows to add 3 party package & liberary with 0 configration)
+ for example to make angular app a prograssive web app theris is more buch o f file .....
+    ng add @ng-bootstrap/schematics [configure autometically]
+11. minify + optimized code : ng build --prod
+
+
+
+  
+  
+
 
 https://www.youtube.com/watch?v=23o0evRtrFI&index=2&list=PL0vfts4VzfNiX5kG1Q8pg2JQ_SB0_ADM1

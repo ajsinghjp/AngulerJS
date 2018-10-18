@@ -1,10 +1,53 @@
 our steps must be in this order:
 
-1) Install angular globally : npm install -g angular-cli@latest
+1) Install angular globally : npm install -g angular-cli@latest (ng install @angular/cli -g)
        ng - v to check angular cli version
-2) Create the app at a directory location (setup anguler cli project) : ng new portal  -- routing
+2) Create the app at a directory location (setup anguler cli project) : ng new portal  --routing
 3) Go into that folder : cd portal
 4) type command : ng serve (Angular Live Development Server is listening on localhost:4200)
+5)ng generate component --help
+ $ ng generate component --help
+usage: ng generate component <name> [options]
+arguments:
+  schematic
+    The schematic or collection:schematic to generate.
+  name
+    The name of the component.
+options:
+  --change-detection (-c)
+    Specifies the change detection strategy.
+  --dryRun (-d)
+    Run through without making any changes.
+  --entry-component
+    Specifies if the component is an entry component of declaring module.
+  --export
+    Specifies if declaring module exports the component.
+  --flat
+    Flag to indicate if a dir is created.
+  --force (-f)
+    Forces overwriting of files.
+  --inline-style (-s)
+    Specifies if the style will be in the ts file.
+  --inline-template (-t)
+    Specifies if the template will be in the ts file.
+  --lint-fix
+    Specifies whether to apply lint fixes after generating the component.
+  --module (-m)
+    Allows specification of the declaring module.
+  --prefix (-p)
+    The prefix to apply to generated selectors.
+  --project
+    The name of the project.
+  --selector
+    The selector to use for the component.
+  --skip-import
+    Flag to skip the module import.
+  --spec
+    Specifies if a spec file is generated.
+  --styleext
+    The file extension to be used for style files.
+  --view-encapsulation (-v)
+    Specifies the view encapsulation strategy.
 
 
 
