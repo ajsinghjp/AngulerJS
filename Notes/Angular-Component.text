@@ -1,3 +1,18 @@
-create component : ng generate component home
+1. create component : ng generate component home (ng g c  home)
 
-ng generate module app-routing --flat --module=app
+2. ng generate module app-routing --flat --module=app
+
+3. not generate testing file + inline template + inline style sheet  : ng g c neat --spec false  --inline-style=true --inline-template=true
+
+4. create module : ng g module awesome --spec true
+
+5. create pipe : ng g pipe  awesome/lowercase
+
+6. generet pipe out side : ng g pipe uppercase -m awesome
+
+7. Installing karma-cli npm install -g karma-cli
+
+8. ng new cliApp --style scss --routing [project with Style Scss + routing option]
+
+
+https://www.youtube.com/watch?v=23o0evRtrFI&index=2&list=PL0vfts4VzfNiX5kG1Q8pg2JQ_SB0_ADM1
