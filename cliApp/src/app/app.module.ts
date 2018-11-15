@@ -19,9 +19,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    NgbModule.forRoot()
+    NgbModule.forRoot()   
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [] 
 })
 export class AppModule { }

@@ -22,6 +22,20 @@
  for example to make angular app a prograssive web app theris is more buch o f file .....
     ng add @ng-bootstrap/schematics [configure autometically]
 11. minify + optimized code : ng build --prod
+12. ng update (update all npm packages)
+-----------------COPMS--------
+<i>How to bind data from this typescript file to HTML template :
+<ii>Directve is basically just like a component but without its own HTML
+<iii> ng g d magnigire (increase the size on hower, NO Html file, No CSS file)
+<iv> Pipe [built-in pipe, custome pipe]
+<v>Async Pipe : allow data fetch Async - $ ng g d maginfier [built-in pipe]
+<vi> ng g pipe year [Create custome pipe year]
+
+
+-----------------------------------Router---------------------------------------
+<i> ng new Router --routing (project set up)
+
+
 
 
 

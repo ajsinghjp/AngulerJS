@@ -8,7 +8,7 @@ import { MagnifierDirective } from './magnifier.directive';
 import { YearPipe } from './year.pipe';
 import { BoatComponent } from './boat/boat.component';
 import { PersonComponent } from './person/person.component';
-import { HelpComponent } from './help/help.component';
+
 
 
 
@@ -19,8 +19,7 @@ import { HelpComponent } from './help/help.component';
     MagnifierDirective,
     YearPipe,
     BoatComponent,
-    PersonComponent,
-    HelpComponent        
+    PersonComponent       
   ],
   imports: [
     BrowserModule,

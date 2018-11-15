@@ -1,0 +1,45 @@
+<h1>{{title}}</h1>
+<button [disabled]="clicked" (click)="handleClick()">Click Me</button>
+<br/>
+<div *ngIf="clicked">
+  <h3>{{boat.name}}</h3>
+  <img [src]="boat.img" width="200px">
+  <p>Built in {{boat.year}}</p>
+</div>
+<br/> 
+<p>---- Student Data --- </p>
+<div *ngFor="let student of students" >
+    
+  <table style="width:50%" border="1">
+    <tr>
+      <td style="width:20%" [ngClass]="{
+                            'green': student.name === 'Ajay Singh', 
+                            'red': student.name === 'Nitij Jhangra'}"> Name : {{student.name}}</td>
+      <td style="width:20%">DOB : {{student.dob}}</td>
+      <td style="width:20%">Percentage : {{student.per | number}}</td>
+      <td style="width:80%"><img [src]="student.img" appMaginfier></td>
+
+    </tr>
+  </table>
+</div>
+<br/>
+<p>---- Company Data --- </p>
+<div *ngFor="let c of company | async" >
+  
+    <table style="width:50%" border="1">
+      <tr>
+        <td style="width:20%"> Company : {{c.name}}</td>
+        <td style="width:20%">Date : {{c.date}}</td>
+        <td style="width:20%">Percentage : {{c.shareprice | roundoff}}</td>
+        <td style="width:80%"><img [src]="c.img" appMaginfier></td>
+  
+      </tr>
+    </table>
+</div>
+
+<p>---- Boat Data --- </p>
+<div *ngFor="let boat of boats | async" >
+  <app-boat [boat]="boat"></app-boat>
+</div>
+  
+  

@@ -1,0 +1,2 @@
+Firebase : https://github.com/angular/angularfire2/blob/master/docs/install-and-setup.md
+Router+Firebase DB : https://www.youtube.com/watch?v=Np3ULAMqwNo&index=3&list=PL0vfts4VzfNiX5kG1Q8pg2JQ_SB0_ADM1
