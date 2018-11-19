@@ -1,6 +1,6 @@
 our steps must be in this order:
 
-1) Install angular globally : npm install -g angular-cli@latest (ng install @angular/cli -g)
+1) Install angular globally : npm install -g angular-cli@latest (npm install @angular/cli -g)
        ng - v to check angular cli version
 2) Create the app at a directory location (setup anguler cli project) : ng new portal  --routing
 3) Go into that folder : cd portal

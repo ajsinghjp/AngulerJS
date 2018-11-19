@@ -22,6 +22,13 @@ const routes: Routes = [
   {path : '**', component : ErrorComponent}                  
   ];
 
+// const routes: Routes = [
+//   {path : '', component : HomeComponent},                  
+//   {path : 'animals', component : AnimalsComponent, children : [{path : ':name', component : AnimalDetailComponent, resolve : [PreloadGuard]}]},
+//   {path : 'animalss', redirectTo : 'animals', pathMatch :'full'},                  
+//   {path : '**', component : ErrorComponent}                  
+//   ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

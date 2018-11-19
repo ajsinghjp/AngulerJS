@@ -19,7 +19,7 @@
    ii. ng g pipe awesome/lowercase
    iii. ng g pipe uppercase -m awesome
 10. ng add @angular/pwa (it allows to add 3 party package & liberary with 0 configration)
- for example to make angular app a prograssive web app theris is more buch o f file .....
+ for example to make angular app a prograssive web app theris is more buch of file .....
     ng add @ng-bootstrap/schematics [configure autometically]
 11. minify + optimized code : ng build --prod
 12. ng update (update all npm packages)
@@ -34,6 +34,9 @@
 
 -----------------------------------Router---------------------------------------
 <i> ng new Router --routing (project set up)
+
+-----------------------------------Forms----------------------------------------
+<i> ng add @angular/material 
 
 
 

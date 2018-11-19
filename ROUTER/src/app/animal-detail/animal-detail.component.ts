@@ -21,7 +21,7 @@ export class AnimalDetailComponent implements OnInit {
     })    
   )
 
-  //this.animal$ = this.route.data;
+  //this.animal$ = this.route.data
   
   }  
 

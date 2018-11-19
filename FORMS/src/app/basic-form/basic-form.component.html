@@ -1,0 +1,22 @@
+Basic Form Work!
+
+<form [formGroup]="myForm" style="text-align: center">
+Value: {{ myForm.value | json }}
+<hr>
+<mat-form-field>
+  <input matInput placeholder="email" formControlName="email">
+</mat-form-field>
+
+<mat-form-field>
+    <textarea matInput placeholder="your message..." formControlName="message"></textarea>
+</mat-form-field>
+
+<mat-form-field>
+    <mat-select  placeholder="career" formControlName="career" >
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                  </mat-option>
+    </mat-select>
+</mat-form-field>
+
+</form> 

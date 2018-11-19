@@ -1,0 +1,20 @@
+<p>
+  submit-form works!
+</p>
+<form [formGroup]="myForm" style="text-align: center" [hidden]="success" (ngSubmit)="submitHandler()">
+  Value: {{ myForm.value | json }}
+  <hr>
+  <mat-form-field>
+    <input matInput placeholder="email" formControlName="email">    
+  </mat-form-field>
+  <br/>
+  <mat-form-field>
+    <textarea matInput placeholder="your message...." formControlName="message"></textarea>
+  </mat-form-field>
+  <br/>
+  <button mat-button color="primary" type="submit">Submit</button>
+ 
+  </form>  
+  <div *ngIf="success" style="text-align: center" >
+    yay! We received your submission
+  </div>
