@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FORMS';
+  changeTitle()
+  {
+    this.title = 'VS Code is Rad';
+  }
 }
