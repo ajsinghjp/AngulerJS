@@ -38,6 +38,13 @@
 -----------------------------------Forms----------------------------------------
 <i> ng add @angular/material 
 
+-----------------------------------ElementsApp----------------------------------------
+<i> ng new elementsApp
+<ii> npm install @angular/elements --save  [install angular elements] ---- npm install -g @angular/cli@6
+<iii> npm i @webcomponents/custom-elements --save [For browser compibility -install polyfills]
+<iv> npm  i firebase angularfire2 --save
+<v> ng g component user-poll [create component] we will convert this component into custom element
+
 
 
 
