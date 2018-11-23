@@ -13,7 +13,13 @@ import {APP_BASE_HREF} from '@angular/common';
 import { environment } from '../environments/environment';
 
 const config ={
-  //firebase config
+  apiKey: "AIzaSyDRYQYnQpNTAHbdri6UqwuN95L8bdIFJhI",
+    authDomain: "fir-50324.firebaseapp.com",
+    databaseURL: "https://fir-50324.firebaseio.com",
+    projectId: "fir-50324",
+    storageBucket: "fir-50324.appspot.com",
+    messagingSenderId: "941705641883",
+    automaticDataCollectionEnabled: false
   
 }
 
@@ -25,7 +31,8 @@ const config ={
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    //AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(config),
     AngularFirestoreModule 
   ],
   providers: [{provide: APP_BASE_HREF, useValue : '/' }]  , 
