@@ -10,9 +10,11 @@ import { UserPollComponent } from './user-poll/user-poll.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import {APP_BASE_HREF} from '@angular/common';  
+import { environment } from '../environments/environment';
 
 const config ={
   //firebase config
+  
 }
 
 @NgModule({
@@ -23,7 +25,7 @@ const config ={
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(config),
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule 
   ],
   providers: [{provide: APP_BASE_HREF, useValue : '/' }]  , 
