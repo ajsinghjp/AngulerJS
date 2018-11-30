@@ -51,8 +51,14 @@ https://angularfirebase.com/lessons/angular-elements-quick-start-guide/
 
 -----------------------------------------------------CRUD-----------------------------------------------
 <i> https://www.youtube.com/watch?v=GEdxydnpNFs&t=1929s
-
-
+<ii>ng new crud --routing
+<iii> npm  i firebase angularfire2 --save
+<iv>ng g c employees
+<v> child component : (1) ng g c employee (2) ng g c employees-list
+<vi>Create service : ng g s employee 
+<vii>Create model class ng g class employee --type=model
+<Viii> [(ngModel)] : for 2 way databinding
+<ix> npm i ngx-toastr --save // after insert/update/delete notification
 
 
 
