@@ -5,3 +5,7 @@ VSCode : https://code.visualstudio.com/download
 Git Base : https://git-scm.com/
 
 
+git pull origin master
+git push -u origin master
+
+
