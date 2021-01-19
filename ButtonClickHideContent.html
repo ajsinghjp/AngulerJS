@@ -1,0 +1,19 @@
+<html> 
+<head> 
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl"> 
+<button ng-click="toggle()">Toggle</button>
+<p ng-show="visible">Hello Ajay</p>
+<script>
+
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope){
+$scope.visible = true;
+$scope.toggle = function(){$scope.visible = !$scope.visible;};
+});
+</script>
+
+</body>
+ </html>
